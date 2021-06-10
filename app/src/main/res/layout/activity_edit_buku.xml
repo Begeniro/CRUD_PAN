@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".EditBuku">
 
     <EditText
         android:id="@+id/editJudul"
@@ -33,23 +33,30 @@
         app:layout_constraintTop_toBottomOf="@+id/editJudul" />
 
     <Button
-        android:id="@+id/tambah_buku"
+        android:id="@+id/buttonSimpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Tambah"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editHarga" />
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="Simpan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHarga"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/buttonBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Batal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tambah_buku" />
+        app:layout_constraintTop_toBottomOf="@+id/editHarga"
+        app:layout_constraintVertical_bias="0.016" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
